@@ -14,7 +14,30 @@ include "functions.php";
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="admin">
-<h1>سلام دنیا</h1>
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#addPost" aria-controls="addPost" role="tab" data-toggle="tab">افزودن مطلب</a></li>
+        <li role="presentation"><a href="#posts" aria-controls="posts" role="tab" data-toggle="tab">فهرست مطالب</a></li>
+        <li role="presentation"><a href="#categories" aria-controls="categories" role="tab" data-toggle="tab">دسته بندی ها</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">تنظیمات اصلی</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="addPost">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="posts">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="categories">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+    </div>
+
+</div>
+
+
+
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>

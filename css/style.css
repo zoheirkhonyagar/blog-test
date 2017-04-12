@@ -370,3 +370,7 @@ footer{
 .admin{
 	background: #fff;
 }
+
+.tab-content{
+	padding:20px;
+}
