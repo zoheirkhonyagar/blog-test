@@ -60,7 +60,30 @@ include "functions.php";
                 </div
             </form>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="posts">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="posts">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>شناسه</th>
+                    <th>عنوان پست</th>
+                    <th>نویسنده</th>
+                    <th>لینک</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>متن اول</td>
+                    <td>نام نویسنده</td>
+                    <td>
+                        <a title="لینک" type="button" class="btn btn-default" href="#" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>
+                        <a title="ویرایش" type="button" class="btn btn-default" href="#" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        <a title="حذف" type="button" class="btn btn-default" href="#" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         <div role="tabpanel" class="tab-pane fade" id="categories">...</div>
         <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
     </div>
@@ -76,5 +99,10 @@ include "functions.php";
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>
