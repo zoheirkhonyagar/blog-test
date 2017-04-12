@@ -374,3 +374,7 @@ footer{
 .tab-content{
 	padding:20px;
 }
+
+.mylabel{
+	line-height:32px;
+}

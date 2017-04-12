@@ -26,7 +26,40 @@ include "functions.php";
 
     <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="addPost">...</div>
+        <div role="tabpanel" class="tab-pane fade in active" id="addPost">
+            <form class="form-horizontal" method="get">
+                <div class="form-group">
+                    <label class="col-md-2 mylabel" for="post-title">عنوان پست :</label>
+                    <div class="col-md-5 col-md-pull-1">
+                        <input type="text" class="form-control" id="post-title" name="title" placeholder="عنوان پست">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 mylabel" for="textarea">متن طولانی :</label>
+                    <div class="col-md-5 col-md-pull-1">
+                        <textarea class="form-control" id="textarea" name="text" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-1 col-md-10">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> طراحی سایت
+                        </label>
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1"> طراحی سایت
+                        </label>
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1"> طراحی سایت
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-1 col-md-10">
+                        <button type="submit" class="btn btn-default">ارسال</button>
+                    </div>
+                </div
+            </form>
+        </div>
         <div role="tabpanel" class="tab-pane fade" id="posts">...</div>
         <div role="tabpanel" class="tab-pane fade" id="categories">...</div>
         <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
