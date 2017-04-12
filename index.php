@@ -18,10 +18,12 @@ include 'functions.php';
 			</div>
 			<div class="social">
 				<ul>
-					<li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
-					<li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
-					<li><a href="#"><img src="images/gplus.png" alt="gplus"></a></li>
-					<li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+					<?php
+						$socials = getSocialLinks();
+						foreach ($socials as $social) {
+							echo "<li><a href=\"{$social['url']}\"><img src=\"images/{$social['name']}.png\" alt='{$social['name']}'></a></li>".PHP_EOL;
+						}
+					?>
 				</ul>
 			</div>
 		</div>
