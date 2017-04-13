@@ -57,7 +57,7 @@ include "functions.php";
                     <div class="col-md-offset-1 col-md-10">
                         <button type="submit" class="btn btn-default">ارسال</button>
                     </div>
-                </div
+                </div>
             </form>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="posts">
@@ -84,7 +84,36 @@ include "functions.php";
                 </tbody>
             </table>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="categories">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="categories">
+            <form class="form-inline" method="get">
+                <div class="form-group">
+                    <label class="mylabel" for="post-title">افزودن دسته بندی :</label>
+                    <input type="text" class="form-control" id="post-title" name="title" placeholder="نام دسته بندی">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">افزودن</button>
+                </div>
+            </form>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>شناسه</th>
+                    <th>عنوان دسته بندی</th>
+                    <th>عملیات</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>متن اول</td>
+                    <td>
+                        <a title="ویرایش" type="button" class="btn btn-default" href="#" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                        <a title="حذف" type="button" class="btn btn-default" href="#" data-toggle="tooltip" data-placement="top"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
     </div>
 
