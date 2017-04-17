@@ -1,15 +1,15 @@
 @import url(reset.css);
 @font-face{
 	font-family: BYekan;
-	src:url(../fonts/BYekan.eot);
+	src:url(../fonts/IranSans.eot);
 }
 @font-face{
 	font-family: BYekan;
-	src:url(../fonts/BYekan.ttf);
+	src:url(../fonts/IranSans.ttf);
 }
 @font-face{
 	font-family: BYekan;
-	src:url(../fonts/BYekan.woff);
+	src:url(../fonts/IranSans.woff);
 }
 
 body{
