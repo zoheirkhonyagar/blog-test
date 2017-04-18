@@ -28,6 +28,7 @@ include "functions.php";
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="addPost">
             <form class="form-horizontal" method="get">
+                <input type="hidden" name="op" value="post">
                 <div class="form-group">
                     <label class="col-md-2 mylabel" for="post-title">عنوان پست :</label>
                     <div class="col-md-5 col-md-pull-1">
@@ -86,6 +87,7 @@ include "functions.php";
         </div>
         <div role="tabpanel" class="tab-pane fade" id="categories">
             <form class="form-inline" method="get">
+                <input type="hidden" name="op" value="categories">
                 <div class="form-group">
                     <label class="mylabel" for="post-title">افزودن دسته بندی :</label>
                     <input type="text" class="form-control" id="post-title" name="title" placeholder="نام دسته بندی">
@@ -114,7 +116,34 @@ include "functions.php";
                 </tbody>
             </table>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+        <div role="tabpanel" class="tab-pane fade" id="settings">
+            <form class="form-horizontal" method="get">
+                <input type="hidden" name="op" value="setting">
+                <div class="form-group">
+                    <label class="col-md-2 mylabel" for="website-name">نام وبسایت :</label>
+                    <div class="col-md-5 col-md-pull-1">
+                        <input type="text" class="form-control" id="website-name" name="sitename" placeholder="نام وبسایت">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 mylabel" for="author">نام نویسنده :</label>
+                    <div class="col-md-5 col-md-pull-1">
+                        <input type="text" class="form-control" id="author" name="author" placeholder="نام نویسنده">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 mylabel" for="copyright">متن کپی رایت :</label>
+                    <div class="col-md-5 col-md-pull-1">
+                        <input type="text" class="form-control" id="copyright" name="copyright" placeholder="متن کپی رایت">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-1 col-md-10">
+                        <button type="submit" class="btn btn-default">ارسال</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
 </div>
