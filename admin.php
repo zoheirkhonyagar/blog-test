@@ -14,6 +14,18 @@ include "functions.php";
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="admin">
+<?php
+if (isset($_GET['type'])){
+    $type = $_GET['type'];
+    switch ($type){
+        case 'setting':
+            updateGeneralSetting($_GET['sitename'],$_GET['copyright'],$_GET['author']);
+            break;
+        default:
+            break;
+    }
+}
+?>
 <div>
 
     <!-- Nav tabs -->
@@ -122,19 +134,19 @@ include "functions.php";
                 <div class="form-group">
                     <label class="col-md-2 mylabel" for="website-name">نام وبسایت :</label>
                     <div class="col-md-5 col-md-pull-1">
-                        <input type="text" class="form-control" id="website-name" name="sitename" placeholder="نام وبسایت">
+                        <input type="text" class="form-control" id="website-name" name="sitename" placeholder="نام وبسایت" value="<?php echo getGeneralSetting('site_name')[0] ?>">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 mylabel" for="author">نام نویسنده :</label>
                     <div class="col-md-5 col-md-pull-1">
-                        <input type="text" class="form-control" id="author" name="author" placeholder="نام نویسنده">
+                        <input type="text" class="form-control" id="author" name="author" placeholder="نام نویسنده" value="<?php echo getGeneralSetting('author')[0] ?>">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 mylabel" for="copyright">متن کپی رایت :</label>
                     <div class="col-md-5 col-md-pull-1">
-                        <input type="text" class="form-control" id="copyright" name="copyright" placeholder="متن کپی رایت">
+                        <input type="text" class="form-control" id="copyright" name="copyright" placeholder="متن کپی رایت" value="<?php echo getGeneralSetting('copyright')[0] ?>">
                     </div>
                 </div>
                 <div class="form-group">
@@ -147,11 +159,6 @@ include "functions.php";
     </div>
 
 </div>
-
-
-
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
