@@ -28,7 +28,7 @@ include "functions.php";
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="addPost">
             <form class="form-horizontal" method="get">
-                <input type="hidden" name="op" value="post">
+                <input type="hidden" name="type" value="post">
                 <div class="form-group">
                     <label class="col-md-2 mylabel" for="post-title">عنوان پست :</label>
                     <div class="col-md-5 col-md-pull-1">
@@ -87,7 +87,7 @@ include "functions.php";
         </div>
         <div role="tabpanel" class="tab-pane fade" id="categories">
             <form class="form-inline" method="get">
-                <input type="hidden" name="op" value="categories">
+                <input type="hidden" name="type" value="categories">
                 <div class="form-group">
                     <label class="mylabel" for="post-title">افزودن دسته بندی :</label>
                     <input type="text" class="form-control" id="post-title" name="title" placeholder="نام دسته بندی">
@@ -118,7 +118,7 @@ include "functions.php";
         </div>
         <div role="tabpanel" class="tab-pane fade" id="settings">
             <form class="form-horizontal" method="get">
-                <input type="hidden" name="op" value="setting">
+                <input type="hidden" name="type" value="setting">
                 <div class="form-group">
                     <label class="col-md-2 mylabel" for="website-name">نام وبسایت :</label>
                     <div class="col-md-5 col-md-pull-1">
